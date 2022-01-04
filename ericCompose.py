@@ -30,13 +30,13 @@ def make_model(network_input, n_vocab):
 	model.add(Activation('softmax'))
 	model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
-	model.load_weights('weights-improvement-01-5.1199-bigger.hdf5')
+	model.load_weights('new-models/epoch-94-loss-3.2266-model.hdf5')
 
 	return model
 
 
 def main():
-	with open('data/notes', 'rb') as filepath:
+	with open('new-pickle/notes', 'rb') as filepath:
 		notes = pickle.load(filepath)
 	pitchnames = sorted(set(item for item in notes))
 	n_vocab = len(set(notes))

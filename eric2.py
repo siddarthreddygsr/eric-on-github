@@ -38,9 +38,9 @@ def main():
 	global notes
 
 	with concurrent.futures.ThreadPoolExecutor() as executor:
-		results = [executor.map(parse, glob.glob("archive/Jazz-mid/*.mid"))]
+		results = [executor.map(parse, glob.glob("training-data/*.mid"))]
 
-	with open('pickle/notes', 'wb') as filepath:
+	with open('new-pickle/notes', 'wb') as filepath:
 		pickle.dump(notes, filepath)
 
 	n_vocab = len(set(notes))
@@ -89,7 +89,7 @@ def main():
 		model.add(Activation('softmax'))
 		model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
-	filepath = "weights-improvement-{epoch:02d}-{loss:.4f}-bigger.hdf5"
+	filepath = "new-models/epoch-{epoch:02d}-loss-{loss:.4f}-model.hdf5"
 	checkpoint = ModelCheckpoint(
 		filepath,
 		monitor='loss',

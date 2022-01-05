@@ -30,7 +30,7 @@ def make_model(network_input, n_vocab):
 	model.add(Activation('softmax'))
 	model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
-	model.load_weights('new-models/epoch-94-loss-3.2266-model.hdf5')
+	model.load_weights('new-models/epoch-110-loss-3.1836-model.hdf5')
 
 	return model
 

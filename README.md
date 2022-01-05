@@ -16,7 +16,7 @@ Setup workspace for training the model
 
 ```bash
  docker pull nvcr.io/nvidia/tensorflow:20.03-tf2-py3
- docker run --gpus all -it -v /home/$USER:/workspace nvcr.io/nvidia/tensorflow:20.03-tf2-py3
+ docker run --gpus all -it -v /home/$USER:/workspace nvcr.io/nvidia/tensorflow:21.12-tf2-py3
  git clone git@github.com:siddarthreddygsr/eric-on-github.git
 ```
 

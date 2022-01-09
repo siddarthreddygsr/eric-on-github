@@ -39,4 +39,5 @@ Getting Results
 
 <p>The training data is stored in <code style="background-color:rgba(0, 0, 0, 0.0470588);"><a>./training-data</a></code></p>
 <p>The data processed by music21 is stored in <code style="background-color:rgba(0, 0, 0, 0.0470588);"><a>./pickle/data</a></code></p>
-<p>The models will be stored in <code style="background-color:rgba(0, 0, 0, 0.0470588);"><a>./models</a></code>
+<p>The models will be stored in <code style="background-color:rgba(0, 0, 0, 0.0470588);"><a>./models</a></code></p>
+<p>The output of the model produced by ericCompose.py is stored in <code style="background-color:rgba(0, 0, 0, 0.0470588);"><a>./output</a></code></p>
